@@ -3,10 +3,11 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import QueryForm from './component/QueryForm';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <QueryForm />
   </React.StrictMode>,
   document.getElementById('root')
 );
