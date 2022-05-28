@@ -4,7 +4,6 @@ function QueryForm() {
             <label>Choose your file for upload:
             </label>
             <input type="file" name="file"/><br></br>
-            <input type="submit" value="Submit Query"/>
         </form>
     )
 }
