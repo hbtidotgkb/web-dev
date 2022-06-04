@@ -7,12 +7,14 @@ import QueryForm from './component/QueryForm';
 import NavBar from './component/NavBar'
 import Header from './component/Header'
 import SingleProblem from './component/algorithms/SingleProblem'
+import MuiButton from './component/MuiButton'
 
 ReactDOM.render(
   <React.StrictMode>
     <Header/>
     <NavBar/>
     <SingleProblem name="Two Sum" desc="Given an array of integers nums and an integer target , return indices of the two numbers such that they add up to target ."/>
+    <MuiButton/>
   </React.StrictMode>,
   document.getElementById('root')
 );
