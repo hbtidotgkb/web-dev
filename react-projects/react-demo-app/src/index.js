@@ -4,11 +4,13 @@ import './index.css';
 import App from './App';
 import Test from './Test';
 import reportWebVitals from './reportWebVitals';
+import BgSound from './components/BgSound';
 
 ReactDOM.render(
   <React.StrictMode>
     <Test />
     <App />
+    <BgSound/>
   </React.StrictMode>,
   document.getElementById('root')
 );
