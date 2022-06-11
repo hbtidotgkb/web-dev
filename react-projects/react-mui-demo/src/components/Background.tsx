@@ -1,4 +1,5 @@
-import bg_img from '../img/minionsImg.jpg'
+import bg_img from '../img/minionsBday.gif'
+
 const styleImg = {
      marginLeft: '25%',
      width: '50%'

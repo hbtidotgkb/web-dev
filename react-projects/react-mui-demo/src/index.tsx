@@ -5,14 +5,16 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { Background } from './components/Background';
 import FullScreenDialog from './components/FullScreenDialog';
+import {BgSound} from './components/BgSound'
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
 root.render(
   <React.StrictMode>
-    <Background/>
     <FullScreenDialog/>
+    <Background/>
+    <BgSound/>
   </React.StrictMode>
 );
 
