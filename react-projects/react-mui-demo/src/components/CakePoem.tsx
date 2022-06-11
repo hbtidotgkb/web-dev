@@ -20,7 +20,7 @@ I'm desperately looking forward for our first hand shake;<br></br>
 Stay motivated & strong with the decisions that you make;<br></br>
 I wish you explore yourself to maximum as there is only one life & no remake;<br></br>
 <br></br>
-Discussion with Cathy is a trouble no less than that of any body ache;<br></br>
+Discussion with Cathy is a trouble no less than that of any ache;<br></br>
 Sharing your birthdate with her proves that even God can commit mistake;<br></br>
 <br></br>
 Here I stop myself and apply a disc brake;<br></br>
