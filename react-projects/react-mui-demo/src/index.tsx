@@ -6,6 +6,8 @@ import reportWebVitals from './reportWebVitals';
 import { Background } from './components/Background';
 import FullScreenDialog from './components/FullScreenDialog';
 import {BgSound} from './components/BgSound'
+import { BgVideo } from './components/BgVideo';
+import PlayVideo from './components/PlayVideo';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
@@ -13,7 +15,9 @@ const root = ReactDOM.createRoot(
 root.render(
   <React.StrictMode>
     <FullScreenDialog/>
-    <Background/>
+    {/* <Background/> */}
+    <PlayVideo/>
+    {/* <BgVideo/> */}
     <BgSound/>
   </React.StrictMode>
 );
