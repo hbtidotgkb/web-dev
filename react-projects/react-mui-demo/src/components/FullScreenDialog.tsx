@@ -13,7 +13,7 @@ import Paper from '@mui/material/Paper';
 import Grid from '@mui/material/Grid';
 import { styled } from '@mui/material/styles';
 import side_img from '../img/minionsCake.gif';
-import side_img_2 from '../img/birthday.gif';
+import side_img_2 from '../img/nidhiBday.jpg';
 import { CakePoem } from './CakePoem';
 
 const Transition = React.forwardRef(function Transition(

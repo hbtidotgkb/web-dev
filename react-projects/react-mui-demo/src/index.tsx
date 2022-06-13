@@ -8,17 +8,25 @@ import FullScreenDialog from './components/FullScreenDialog';
 import {BgSound} from './components/BgSound'
 import { BgVideo } from './components/BgVideo';
 import PlayVideo from './components/PlayVideo';
+import bg_img from './bg_bday.jpg'
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
+
+const styleImg = {
+  backgroundImage:bg_img,
+  backgroundRepeat:'no-repeat'
+}
 root.render(
   <React.StrictMode>
+    <div style={{backgroundImage: `url(${bg_img})`,backgroundRepeat:'no-repeat', width:'100%'}}>
     <FullScreenDialog/>
     {/* <Background/> */}
     <PlayVideo/>
     {/* <BgVideo/> */}
     <BgSound/>
+    </div>
   </React.StrictMode>
 );
 

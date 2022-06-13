@@ -1,4 +1,4 @@
-import bdayVideo from '../video/finalSong.mp4';
+import bdayVideo from '../video/bdayVideo.mp4';
 
 const styleImg = {
     marginLeft: '25%',
