@@ -7,7 +7,7 @@ const styleImg = {
 const PlayVideo = () => {
     return (
         <div style={styleImg}>
-        <video src={bdayVideo} autoPlay loop muted
+        <video src={bdayVideo} controls autoPlay loop muted
             style={{width:"65%",
             left: "50%",
             top: "50%",
