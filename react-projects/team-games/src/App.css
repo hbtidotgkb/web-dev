@@ -38,6 +38,11 @@
 }
 
 .Bdrs-Bg {
-  height: 99.9vmin;
-  width: 110vmin;
+  height: 96.5vmin;
+  width: 103vmin;
+}
+
+.Bdrs-Img {
+  height: 25vmin;
+  width: 25vmin;
 }
