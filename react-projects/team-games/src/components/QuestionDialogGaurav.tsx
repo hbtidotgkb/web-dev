@@ -7,10 +7,7 @@ import DialogContentText from '@mui/material/DialogContentText';
 import DialogTitle from '@mui/material/DialogTitle';
 import Slide from '@mui/material/Slide';
 import { TransitionProps } from '@mui/material/transitions';
-import ButtonBase from '@mui/material/ButtonBase';
-import Typography from '@mui/material/Typography';
-import { styled } from '@mui/material/styles';
-import dp_sean from '../images/dp/dp_sean.png';
+import dp_gaurav from '../images/dp/dp_gaurav.png';
 
 const Transition = React.forwardRef(function Transition(
   props: TransitionProps & {
@@ -37,7 +34,7 @@ export default function QuestionDialog_Sean() {
       {/* <Button variant="outlined" onClick={handleClickOpen}>
         Slide in alert dialog
       </Button> */}
-      <img src={dp_sean} className="Bdrs-Img" onClick={handleClickOpen}/>
+      <img src={dp_gaurav} className="Bdrs-Img" onClick={handleClickOpen}/>
       <Dialog
         open={open}
         TransitionComponent={Transition}
@@ -45,11 +42,10 @@ export default function QuestionDialog_Sean() {
         onClose={handleClose}
         aria-describedby="alert-dialog-slide-description"
       >
-        <DialogTitle>{"Trivia for Sailaja"}</DialogTitle>
+        <DialogTitle>{"Trivia for Gaurav"}</DialogTitle>
         <DialogContent>
           <DialogContentText id="alert-dialog-slide-description">
-            Let Google help apps determine location. This means sending anonymous
-            location data to Google, even when no apps are running.
+            Do not expect me questioning myself!
           </DialogContentText>
         </DialogContent>
         <DialogActions>

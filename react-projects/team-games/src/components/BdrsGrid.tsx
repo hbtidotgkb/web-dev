@@ -4,14 +4,15 @@ import Box from '@mui/material/Box';
 import Paper from '@mui/material/Paper';
 import Grid from '@mui/material/Grid';
 import Typography from '@mui/material/Typography';
-import dp_sean from '../images/dp/dp_sean.png';
-import QuestionDialog_Sean from './QuestionDialog_Sean';
-import QuestionDialog_Jason from './QuestionDialog_Jason';
-import QuestionDialog_Cathy from './QuestionDialog_Cathy';
-import QuestionDialog_Nidhi from './QuestionDialog_Nidhi';
-import QuestionDialog_Charan from './QuestionDialog_Charan';
-import QuestionDialog_Gaurav from './QuestionDialog_Gaurav';
-import QuestionDialog_Bharath from './QuestionDialog_Bharath';
+import QuestionDialogSean from './QuestionDialogSean';
+import QuestionDialogJason from './QuestionDialogJason';
+import QuestionDialogCathy from './QuestionDialogCathy';
+import QuestionDialogNidhi from './QuestionDialogNidhi';
+import QuestionDialogCharan from './QuestionDialogCharan';
+import QuestionDialogGaurav from './QuestionDialogGaurav';
+import QuestionDialogBharath from './QuestionDialogBharath';
+import QuestionDialogSailaja from './QuestionDialogSailaja';
+import QuestionDialogAnu from './QuestionDialogAnu';
 
 const Item = styled(Paper)(({ theme }) => ({
   backgroundColor: theme.palette.mode === 'dark' ? '#1A2027' : '#fff',
@@ -25,13 +26,13 @@ function FormRow1() {
   return (
     <React.Fragment>
       <Grid item>
-        <Item><QuestionDialog_Sean/></Item>
+        <Item><QuestionDialogSean/></Item>
       </Grid>
       <Grid item >
-      <Item><QuestionDialog_Jason/></Item>
+      <Item><QuestionDialogJason/></Item>
       </Grid>
       <Grid item >
-      <Item><QuestionDialog_Cathy/></Item>
+      <Item><QuestionDialogCathy/></Item>
       </Grid>
     </React.Fragment>
   );
@@ -40,13 +41,13 @@ function FormRow2() {
     return (
       <React.Fragment>
         <Grid item>
-          <Item><QuestionDialog_Nidhi/></Item>
+          <Item><QuestionDialogNidhi/></Item>
         </Grid>
         <Grid item >
-        <Item><QuestionDialog_Charan/></Item>
+        <Item><QuestionDialogCharan/></Item>
         </Grid>
         <Grid item >
-        <Item><QuestionDialog_Gaurav/></Item>
+        <Item><QuestionDialogGaurav/></Item>
         </Grid>
       </React.Fragment>
     );
@@ -56,13 +57,13 @@ function FormRow2() {
     return (
       <React.Fragment>
         <Grid item>
-          <Item><img src={dp_sean} className="Bdrs-Img"/></Item>
+          <Item><QuestionDialogSailaja/></Item>
         </Grid>
         <Grid item >
-        <Item><QuestionDialog_Bharath/></Item>
+        <Item><QuestionDialogBharath/></Item>
         </Grid>
         <Grid item >
-        <Item><img src={dp_sean} className="Bdrs-Img"/></Item>
+        <Item><QuestionDialogAnu/></Item>
         </Grid>
       </React.Fragment>
     );
@@ -72,8 +73,8 @@ function FormRow2() {
 export default function BdrsGrid() {
   return (
     <div>
-    <Typography>
-        Team - BDRS
+    <Typography variant='h4' gutterBottom>
+        <Box sx={{fontWeight:'bold'}}>Team - BDRS</Box>
     </Typography>
     <Box sx={{ flexGrow: 1 }}>
       <Grid container spacing={1}>

@@ -7,10 +7,7 @@ import DialogContentText from '@mui/material/DialogContentText';
 import DialogTitle from '@mui/material/DialogTitle';
 import Slide from '@mui/material/Slide';
 import { TransitionProps } from '@mui/material/transitions';
-import ButtonBase from '@mui/material/ButtonBase';
-import Typography from '@mui/material/Typography';
-import { styled } from '@mui/material/styles';
-import dp_charan from '../images/dp/dp_charan.png';
+import dp_sean from '../images/dp/dp_bharath.png';
 
 const Transition = React.forwardRef(function Transition(
   props: TransitionProps & {
@@ -21,7 +18,7 @@ const Transition = React.forwardRef(function Transition(
   return <Slide direction="up" ref={ref} {...props} />;
 });
 
-export default function QuestionDialog_Charan() {
+export default function QuestionDialog_Bharath() {
   const [open, setOpen] = React.useState(false);
 
   const handleClickOpen = () => {
@@ -37,7 +34,7 @@ export default function QuestionDialog_Charan() {
       {/* <Button variant="outlined" onClick={handleClickOpen}>
         Slide in alert dialog
       </Button> */}
-      <img src={dp_charan} className="Bdrs-Img" onClick={handleClickOpen}/>
+      <img src={dp_sean} className="Bdrs-Img" onClick={handleClickOpen}/>
       <Dialog
         open={open}
         TransitionComponent={Transition}
@@ -45,7 +42,7 @@ export default function QuestionDialog_Charan() {
         onClose={handleClose}
         aria-describedby="alert-dialog-slide-description"
       >
-        <DialogTitle>{"Trivia for SriCharan"}</DialogTitle>
+        <DialogTitle>{"Trivia for Bharath"}</DialogTitle>
         <DialogContent>
           <DialogContentText id="alert-dialog-slide-description">
             Let Google help apps determine location. This means sending anonymous
