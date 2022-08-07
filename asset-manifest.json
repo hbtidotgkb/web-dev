@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/web-dev/static/css/main.17013703.css",
-    "main.js": "/web-dev/static/js/main.599fb14b.js",
+    "main.css": "/web-dev/static/css/main.03652382.css",
+    "main.js": "/web-dev/static/js/main.64622fd0.js",
     "static/js/787.b4a032ad.chunk.js": "/web-dev/static/js/787.b4a032ad.chunk.js",
     "static/media/bdrs_bg.png": "/web-dev/static/media/bdrs_bg.76aab112a20a9dba0010.png",
     "static/media/dp_nidhi.png": "/web-dev/static/media/dp_nidhi.16e560d5021c71327e92.png",
@@ -10,14 +10,16 @@
     "static/media/dp_gaurav.png": "/web-dev/static/media/dp_gaurav.9795c6149ce038ed1088.png",
     "static/media/dp_jason.png": "/web-dev/static/media/dp_jason.13dfc1e0cb171af5cf85.png",
     "static/media/dp_bharath.png": "/web-dev/static/media/dp_bharath.9e6e26d1d5af4baf22d0.png",
+    "static/media/dp_anu.png": "/web-dev/static/media/dp_anu.2fa1adf03835d029f571.png",
     "static/media/dp_sean.png": "/web-dev/static/media/dp_sean.4fcfe9440c02e56bf7c3.png",
+    "static/media/dp_sailaja.png": "/web-dev/static/media/dp_sailaja.773903688da12468d456.png",
     "index.html": "/web-dev/index.html",
-    "main.17013703.css.map": "/web-dev/static/css/main.17013703.css.map",
-    "main.599fb14b.js.map": "/web-dev/static/js/main.599fb14b.js.map",
+    "main.03652382.css.map": "/web-dev/static/css/main.03652382.css.map",
+    "main.64622fd0.js.map": "/web-dev/static/js/main.64622fd0.js.map",
     "787.b4a032ad.chunk.js.map": "/web-dev/static/js/787.b4a032ad.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.17013703.css",
-    "static/js/main.599fb14b.js"
+    "static/css/main.03652382.css",
+    "static/js/main.64622fd0.js"
   ]
 }
