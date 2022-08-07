@@ -42,7 +42,7 @@ export default function QuestionDialog_Sean() {
         onClose={handleClose}
         aria-describedby="alert-dialog-slide-description"
       >
-        <DialogTitle>{"Trivia for Gaurav"}</DialogTitle>
+        <DialogTitle>{"Ice-Breaker Question for Gaurav"}</DialogTitle>
         <DialogContent>
           <DialogContentText id="alert-dialog-slide-description">
             Do not expect me questioning myself!

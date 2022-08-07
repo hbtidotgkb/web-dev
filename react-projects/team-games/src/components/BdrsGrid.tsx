@@ -13,6 +13,7 @@ import QuestionDialogGaurav from './QuestionDialogGaurav';
 import QuestionDialogBharath from './QuestionDialogBharath';
 import QuestionDialogSailaja from './QuestionDialogSailaja';
 import QuestionDialogAnu from './QuestionDialogAnu';
+import NameThatEmoji from './NameThatEmoji';
 
 const Item = styled(Paper)(({ theme }) => ({
   backgroundColor: theme.palette.mode === 'dark' ? '#1A2027' : '#fff',
@@ -69,11 +70,10 @@ function FormRow2() {
     );
   }
 
-
 export default function BdrsGrid() {
   return (
     <div>
-    <Typography variant='h4' gutterBottom>
+    <Typography variant='h5' color="#000000">
         <Box sx={{fontWeight:'bold'}}>Team - BDRS</Box>
     </Typography>
     <Box sx={{ flexGrow: 1 }}>
@@ -89,6 +89,7 @@ export default function BdrsGrid() {
         </Grid>
       </Grid>
     </Box>
+    <NameThatEmoji/>
     </div>
   );
 }

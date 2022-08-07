@@ -42,11 +42,10 @@ export default function QuestionDialog_Bharath() {
         onClose={handleClose}
         aria-describedby="alert-dialog-slide-description"
       >
-        <DialogTitle>{"Trivia for Bharath"}</DialogTitle>
+        <DialogTitle>{"Ice-Breaker Question For Bharath"}</DialogTitle>
         <DialogContent>
           <DialogContentText id="alert-dialog-slide-description">
-            Let Google help apps determine location. This means sending anonymous
-            location data to Google, even when no apps are running.
+               Ice-Breaker Question For Bharath
           </DialogContentText>
         </DialogContent>
         <DialogActions>
