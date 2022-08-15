@@ -46,7 +46,7 @@ export default function QuestionDialog_Anu() {
         <DialogTitle>{"Ice-Breaker Question for Anu"}</DialogTitle>
         <DialogContent>
           <DialogContentText id="alert-dialog-slide-description">
-              <Typography variant='h5'color="#FF0000">What is one thing we would never guess about you?</Typography>
+              <Typography variant='h5'color="#FF0000">Will be revealed on 25th Aug 😀</Typography>
           </DialogContentText>
         </DialogContent>
         <DialogActions>

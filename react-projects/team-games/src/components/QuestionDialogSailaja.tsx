@@ -46,7 +46,7 @@ export default function QuestionDialog_Sean() {
         <DialogTitle>{"Ice-Breaker Question for Sailaja"}</DialogTitle>
         <DialogContent>
           <DialogContentText id="alert-dialog-slide-description">
-              <Typography variant='h5'color="#FF0000">What's one thing you can't say at work that you wish you could?</Typography>
+              <Typography variant='h5'color="#FF0000">Will be revealed on 25th Aug 😀</Typography>
           </DialogContentText>
         </DialogContent>
         <DialogActions>

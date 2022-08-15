@@ -46,7 +46,7 @@ export default function QuestionDialog_Nidhi() {
         <DialogTitle>{"Ice-Breaker Question for SriNidhi"}</DialogTitle>
         <DialogContent>
           <DialogContentText id="alert-dialog-slide-description">
-          <Typography variant='h5'color="#FF0000">If you were a superhero/superwoman what would your superpower be and why?</Typography>
+          <Typography variant='h5'color="#FF0000">Will be revealed on 25th Aug 😀</Typography>
           </DialogContentText>
         </DialogContent>
         <DialogActions>

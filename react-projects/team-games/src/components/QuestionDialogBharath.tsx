@@ -46,7 +46,7 @@ export default function QuestionDialog_Bharath() {
         <DialogTitle>{"Ice-Breaker Question For Bharath"}</DialogTitle>
         <DialogContent>
           <DialogContentText id="alert-dialog-slide-description">
-              <Typography variant='h5'color="#FF0000">What's something new you have learnt about you recently?</Typography>
+              <Typography variant='h5'color="#FF0000">Will be revealed on 25th Aug 😀</Typography>
           </DialogContentText>
         </DialogContent>
         <DialogActions>

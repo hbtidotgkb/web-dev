@@ -46,7 +46,7 @@ export default function QuestionDialog_Sean() {
         <DialogTitle>{"Ice-Breaker Question for Mr. Sean"}</DialogTitle>
         <DialogContent>
           <DialogContentText id="alert-dialog-slide-description">
-              <Typography variant='h5'color="#FF0000">Name one thing you'd change about every person in this chat room.</Typography>
+              <Typography variant='h5'color="#FF0000">Will be revealed on 25th Aug 😀</Typography>
           </DialogContentText>
         </DialogContent>
         <DialogActions>
