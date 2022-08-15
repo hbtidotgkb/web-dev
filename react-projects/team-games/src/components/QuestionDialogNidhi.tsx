@@ -8,6 +8,7 @@ import DialogTitle from '@mui/material/DialogTitle';
 import Slide from '@mui/material/Slide';
 import { TransitionProps } from '@mui/material/transitions';
 import dp_anu from '../images/dp/dp_nidhi.png';
+import Typography from '@mui/material/Typography';
 
 const Transition = React.forwardRef(function Transition(
   props: TransitionProps & {
@@ -34,7 +35,7 @@ export default function QuestionDialog_Nidhi() {
       {/* <Button variant="outlined" onClick={handleClickOpen}>
         Slide in alert dialog
       </Button> */}
-      <img src={dp_anu} className="Bdrs-Img" onClick={handleClickOpen}/>
+      <img src={dp_anu} className="Bdrs-Img-SN" onClick={handleClickOpen}/>
       <Dialog
         open={open}
         TransitionComponent={Transition}
@@ -45,7 +46,7 @@ export default function QuestionDialog_Nidhi() {
         <DialogTitle>{"Ice-Breaker Question for SriNidhi"}</DialogTitle>
         <DialogContent>
           <DialogContentText id="alert-dialog-slide-description">
-          Ice-Breaker Question for SriNidhi.
+          <Typography variant='h5'color="#FF0000">If you were a superhero what would your superpwer be and why?</Typography>
           </DialogContentText>
         </DialogContent>
         <DialogActions>

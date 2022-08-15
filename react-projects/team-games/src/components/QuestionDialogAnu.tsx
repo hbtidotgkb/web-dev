@@ -8,6 +8,7 @@ import DialogTitle from '@mui/material/DialogTitle';
 import Slide from '@mui/material/Slide';
 import { TransitionProps } from '@mui/material/transitions';
 import dp_anu from '../images/dp/dp_anu.png';
+import Typography from '@mui/material/Typography';
 
 const Transition = React.forwardRef(function Transition(
   props: TransitionProps & {
@@ -45,7 +46,7 @@ export default function QuestionDialog_Anu() {
         <DialogTitle>{"Ice-Breaker Question for Anu"}</DialogTitle>
         <DialogContent>
           <DialogContentText id="alert-dialog-slide-description">
-              Ice-Breaker Question for Anu.
+              <Typography variant='h5'color="#FF0000">What is one thing we would never guess about you?</Typography>
           </DialogContentText>
         </DialogContent>
         <DialogActions>

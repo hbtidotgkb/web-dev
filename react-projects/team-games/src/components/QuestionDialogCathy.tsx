@@ -8,6 +8,7 @@ import DialogTitle from '@mui/material/DialogTitle';
 import Slide from '@mui/material/Slide';
 import { TransitionProps } from '@mui/material/transitions';
 import dp_cathy from '../images/dp/dp_cathy.png';
+import Typography from '@mui/material/Typography';
 
 const Transition = React.forwardRef(function Transition(
   props: TransitionProps & {
@@ -45,7 +46,7 @@ export default function QuestionDialog_Cathy() {
         <DialogTitle>{"Ice-Breaker Question for Cathy"}</DialogTitle>
         <DialogContent>
           <DialogContentText id="alert-dialog-slide-description">
-              Ice-Breaker Question for Cathy
+              <Typography variant='h5'color="#FF0000">If you could swap job with anyone for a day, who would it be?</Typography>
           </DialogContentText>
         </DialogContent>
         <DialogActions>

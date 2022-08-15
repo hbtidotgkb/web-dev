@@ -8,6 +8,7 @@ import DialogTitle from '@mui/material/DialogTitle';
 import Slide from '@mui/material/Slide';
 import { TransitionProps } from '@mui/material/transitions';
 import dp_sailaja from '../images/dp/dp_sailaja.png';
+import Typography from '@mui/material/Typography';
 
 const Transition = React.forwardRef(function Transition(
   props: TransitionProps & {
@@ -34,7 +35,7 @@ export default function QuestionDialog_Sean() {
       {/* <Button variant="outlined" onClick={handleClickOpen}>
         Slide in alert dialog
       </Button> */}
-      <img src={dp_sailaja} className="Bdrs-Img" onClick={handleClickOpen}/>
+      <img src={dp_sailaja} className="Bdrs-Img-SG" onClick={handleClickOpen}/>
       <Dialog
         open={open}
         TransitionComponent={Transition}
@@ -45,7 +46,7 @@ export default function QuestionDialog_Sean() {
         <DialogTitle>{"Ice-Breaker Question for Sailaja"}</DialogTitle>
         <DialogContent>
           <DialogContentText id="alert-dialog-slide-description">
-              Ice-Breaker Question for Sailaja.
+              <Typography variant='h5'color="#FF0000">Whta's one thing you can't say at work that you wish you could?</Typography>
           </DialogContentText>
         </DialogContent>
         <DialogActions>

@@ -8,6 +8,7 @@ import DialogTitle from '@mui/material/DialogTitle';
 import Slide from '@mui/material/Slide';
 import { TransitionProps } from '@mui/material/transitions';
 import dp_charan from '../images/dp/dp_charan.png';
+import Typography from '@mui/material/Typography';
 
 const Transition = React.forwardRef(function Transition(
   props: TransitionProps & {
@@ -34,7 +35,7 @@ export default function QuestionDialog_Charan() {
       {/* <Button variant="outlined" onClick={handleClickOpen}>
         Slide in alert dialog
       </Button> */}
-      <img src={dp_charan} className="Bdrs-Img" onClick={handleClickOpen}/>
+      <img src={dp_charan} className="Bdrs-Img-Sean" onClick={handleClickOpen}/>
       <Dialog
         open={open}
         TransitionComponent={Transition}
@@ -45,7 +46,7 @@ export default function QuestionDialog_Charan() {
         <DialogTitle>{"Ice-Breaker Question for SriCharan"}</DialogTitle>
         <DialogContent>
           <DialogContentText id="alert-dialog-slide-description">
-              Ice-Breaker Question for Cathy.
+              <Typography variant='h5'color="#FF0000">Who is the one person who changed your life but doesn't know it?</Typography>
           </DialogContentText>
         </DialogContent>
         <DialogActions>

@@ -8,6 +8,7 @@ import DialogTitle from '@mui/material/DialogTitle';
 import Slide from '@mui/material/Slide';
 import { TransitionProps } from '@mui/material/transitions';
 import dp_sean from '../images/dp/dp_bharath.png';
+import Typography from '@mui/material/Typography';
 
 const Transition = React.forwardRef(function Transition(
   props: TransitionProps & {
@@ -34,7 +35,7 @@ export default function QuestionDialog_Bharath() {
       {/* <Button variant="outlined" onClick={handleClickOpen}>
         Slide in alert dialog
       </Button> */}
-      <img src={dp_sean} className="Bdrs-Img" onClick={handleClickOpen}/>
+      <img src={dp_sean} className="Bdrs-Img-Bharath" onClick={handleClickOpen}/>
       <Dialog
         open={open}
         TransitionComponent={Transition}
@@ -45,7 +46,7 @@ export default function QuestionDialog_Bharath() {
         <DialogTitle>{"Ice-Breaker Question For Bharath"}</DialogTitle>
         <DialogContent>
           <DialogContentText id="alert-dialog-slide-description">
-               Ice-Breaker Question For Bharath
+              <Typography variant='h5'color="#FF0000">What's something new you have learnt about you recently?</Typography>
           </DialogContentText>
         </DialogContent>
         <DialogActions>

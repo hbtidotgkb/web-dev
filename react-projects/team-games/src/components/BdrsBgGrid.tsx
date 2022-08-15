@@ -17,11 +17,11 @@ const Item = styled(Paper)(({ theme }) => ({
 export default function BdrsBgGrid() {
   return (
     <Box sx={{ flexGrow: 1 }}>
-      <Grid container spacing={2} columns={16}>
-        <Grid item xs={8}>
+      <Grid container>
+        <Grid item xs>
           <Item><App/></Item>
         </Grid>
-        <Grid item xs={8}>
+        <Grid item xs>
           <Item><BdrsGrid/></Item>
         </Grid>
       </Grid>

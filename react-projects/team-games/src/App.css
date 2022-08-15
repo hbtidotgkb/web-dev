@@ -43,7 +43,37 @@
 }
 
 .Bdrs-Img {
-  height: 25vmin;
-  width: 25vmin;
+  height: 100%;
+  width: 100%;
+  cursor: pointer
+}
+
+.Bdrs-Img-Sean {
+  height: 80%;
+  width: 80%;
+  cursor: pointer
+}
+
+.Bdrs-Img-Jason {
+  height: 97%;
+  width: 97%;
+  cursor: pointer
+}
+
+.Bdrs-Img-Bharath {
+  height: 85%;
+  width: 85%;
+  cursor: pointer
+}
+
+.Bdrs-Img-SN {
+  height: 97%;
+  width: 97%;
+  cursor: pointer
+}
+
+.Bdrs-Img-SG {
+  height: 95%;
+  width: 95%;
   cursor: pointer
 }
