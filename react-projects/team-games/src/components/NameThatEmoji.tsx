@@ -48,59 +48,71 @@ export default function NameThatEmoji() {
     setOpen(false);
   };
 
-  //Brand
-  const revealEmojiJasonBrand = (id: string) => {
+  function timeout(delay: number) {
+    return new Promise( res => setTimeout(res, delay) );
+  }
+
+  const updateElement = async (id: string) => {
     const el = document.getElementById(id);
+    for(var i=1;i<=10;i++) {
+      el!.innerText="\u00A0"+"\u00A0"+"\u00A0"+"\u00A0"+"\u00A0"+i;
+      await timeout(1000);
+    }
+    el!.innerText="\u00A0"+"\u00A0"+"\u00A0"+"\u00A0"+"\u00A0"+"Time's UP!";
+  };
+  //Brand
+  const revealEmojiJasonBrand = async (id: string) => {
     setIsVisibleJasonBrand(current => !current);
+    updateElement(id);
   };
 
   const revealEmojiCathyBrand = (id: string) => {
-    const el = document.getElementById(id);
     setIsVisibleCathyBrand(current => !current);
+    updateElement(id);
   };
 
   //Movie
   const revealEmojiJasonMovie = (id: string) => {
-    const el = document.getElementById(id);
     setIsVisibleJasonMovie(current => !current);
+    updateElement(id);
   };
 
   const revealEmojiCathyMovie = (id: string) => {
-    const el = document.getElementById(id);
     setIsVisibleCathyMovie(current => !current);
+    updateElement(id);
   };
 
   //Food
   const revealEmojiJasonFood = (id: string) => {
-    const el = document.getElementById(id);
     setIsVisibleJasonFood(current => !current);
+    updateElement(id);
   };
 
   const revealEmojiCathyFood = (id: string) => {
-    const el = document.getElementById(id);
     setIsVisibleCathyFood(current => !current);
+    updateElement(id);
   };
 
   //City
   const revealEmojiJasonCity = (id: string) => {
-    const el = document.getElementById(id);
     setIsVisibleJasonCity(current => !current);
+    updateElement(id);
   };
 
   const revealEmojiCathyCity = (id: string) => {
-    const el = document.getElementById(id);
     setIsVisibleCathyCity(current => !current);
+    updateElement(id);
   };
 
   //Celebrity
   const revealEmojiJasonCelebrity = (id: string) => {
-    const el = document.getElementById(id);
     setIsVisibleJasonCelebrity(current => !current);
+    updateElement(id);
   };
 
   const revealEmojiCathyCelebrity = (id: string) => {
-    const el = document.getElementById(id);
     setIsVisibleCathyCelebrity(current => !current);
+    updateElement(id);
   };
 
   return (
@@ -125,22 +137,24 @@ export default function NameThatEmoji() {
               <CloseIcon />
             </IconButton>
             <Typography sx={{ ml: 2, flex: 1 }} variant="h6" component="div">
-              Name That Emoji
+              Name That Emoji Quiz
             </Typography>
           </Toolbar>
         </AppBar>
         <List>
           <ListItem button>
             <ListItemText primary="Team Jason" secondary="Brand Emoji Sequence" />
-            <Typography variant='h5' visibility='hidden' id='jason_brand_emoji' style={{visibility: isVisibleJasonBrand ? 'visible' : 'hidden'}}>
+            <Typography variant='h5' visibility='hidden' style={{visibility: isVisibleJasonBrand ? 'visible' : 'hidden'}}>
                Brand Q-1 😀
+            </Typography>
+            <Typography variant='h5' visibility='hidden' style={{visibility: isVisibleJasonBrand ? 'visible' : 'hidden'}}>
+            <p id='jason_brand_emoji_timer' style={{color:"red"}}>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Timer</p>
             </Typography>
             <Typography variant='h5'>
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;                                                                        
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             </Typography>
-            <Button variant="outlined" size="large" onClick={()=>revealEmojiJasonBrand('jason_brand_emoji')}>
+            <Button variant="outlined" size="large" onClick={()=>revealEmojiJasonBrand('jason_brand_emoji_timer')}>
                Reveal Sequence
             </Button>
           </ListItem>
@@ -153,12 +167,14 @@ export default function NameThatEmoji() {
             <Typography variant='h5' visibility='hidden' id='jason_brand_emoji' style={{visibility: isVisibleCathyBrand ? 'visible' : 'hidden'}}>
                Brand Q-1 😀
             </Typography>
+            <Typography variant='h5' visibility='hidden' style={{visibility: isVisibleCathyBrand ? 'visible' : 'hidden'}}>
+            <p id='cathy_brand_emoji_timer' style={{color:"red"}}>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Timer</p>
+            </Typography>
             <Typography variant='h5'>
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;                                                                        
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             </Typography>
-            <Button variant="outlined" size="large" onClick={()=>revealEmojiCathyBrand('jason_brand_emoji')}>
+            <Button variant="outlined" size="large" onClick={()=>revealEmojiCathyBrand('cathy_brand_emoji_timer')}>
                Reveal Sequence
             </Button>
           </ListItem>
@@ -171,12 +187,14 @@ export default function NameThatEmoji() {
             <Typography variant='h5' visibility='hidden' id='jason_brand_emoji' style={{visibility: isVisibleJasonMovie ? 'visible' : 'hidden'}}>
                Movie Q-1 😀
             </Typography>
+            <Typography variant='h5' visibility='hidden' style={{visibility: isVisibleJasonMovie ? 'visible' : 'hidden'}}>
+            <p id='jason_movie_emoji_timer' style={{color:"red"}}>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Timer</p>
+            </Typography>
             <Typography variant='h5'>
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;                                                                        
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             </Typography>
-            <Button variant="outlined" size="large" onClick={()=>revealEmojiJasonMovie('jason_brand_emoji')}>
+            <Button variant="outlined" size="large" onClick={()=>revealEmojiJasonMovie('jason_movie_emoji_timer')}>
                Reveal Sequence
             </Button>
           </ListItem>
@@ -189,12 +207,14 @@ export default function NameThatEmoji() {
             <Typography variant='h5' visibility='hidden' id='jason_brand_emoji' style={{visibility: isVisibleCathyMovie ? 'visible' : 'hidden'}}>
                Movie Q-1 😀
             </Typography>
+            <Typography variant='h5' visibility='hidden' style={{visibility: isVisibleCathyMovie ? 'visible' : 'hidden'}}>
+            <p id='cathy_movie_emoji_timer' style={{color:"red"}}>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Timer</p>
+            </Typography>
             <Typography variant='h5'>
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;                                                                        
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             </Typography>
-            <Button variant="outlined" size="large" onClick={()=>revealEmojiCathyMovie('jason_brand_emoji')}>
+            <Button variant="outlined" size="large" onClick={()=>revealEmojiCathyMovie('cathy_movie_emoji_timer')}>
                Reveal Sequence
             </Button>
           </ListItem>
@@ -206,12 +226,14 @@ export default function NameThatEmoji() {
             <Typography variant='h5' visibility='hidden' id='jason_brand_emoji' style={{visibility: isVisibleJasonFood ? 'visible' : 'hidden'}}>
                Food Q-1 😀
             </Typography>
+            <Typography variant='h5' visibility='hidden' style={{visibility: isVisibleJasonFood ? 'visible' : 'hidden'}}>
+            <p id='jason_food_emoji_timer' style={{color:"red"}}>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Timer</p>
+            </Typography>
             <Typography variant='h5'>
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;                                                                        
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             </Typography>
-            <Button variant="outlined" size="large" onClick={()=>revealEmojiJasonFood('jason_brand_emoji')}>
+            <Button variant="outlined" size="large" onClick={()=>revealEmojiJasonFood('jason_food_emoji_timer')}>
                Reveal Sequence
             </Button>
           </ListItem>
@@ -224,12 +246,14 @@ export default function NameThatEmoji() {
             <Typography variant='h5' visibility='hidden' id='jason_brand_emoji' style={{visibility: isVisibleCathyFood ? 'visible' : 'hidden'}}>
                Food Q-1 😀
             </Typography>
+            <Typography variant='h5' visibility='hidden' style={{visibility: isVisibleCathyFood ? 'visible' : 'hidden'}}>
+            <p id='cathy_food_emoji_timer' style={{color:"red"}}>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Timer</p>
+            </Typography>
             <Typography variant='h5'>
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;                                                                        
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             </Typography>
-            <Button variant="outlined" size="large" onClick={()=>revealEmojiCathyFood('jason_brand_emoji')}>
+            <Button variant="outlined" size="large" onClick={()=>revealEmojiCathyFood('cathy_food_emoji_timer')}>
                Reveal Sequence
             </Button>
           </ListItem>
@@ -241,12 +265,14 @@ export default function NameThatEmoji() {
             <Typography variant='h5' visibility='hidden' id='jason_brand_emoji' style={{visibility: isVisibleJasonCity ? 'visible' : 'hidden'}}>
                City Q-1 😀
             </Typography>
+            <Typography variant='h5' visibility='hidden' style={{visibility: isVisibleJasonCity ? 'visible' : 'hidden'}}>
+            <p id='jason_city_emoji_timer' style={{color:"red"}}>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Timer</p>
+            </Typography>
             <Typography variant='h5'>
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;                                                                        
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             </Typography>
-            <Button variant="outlined" size="large" onClick={()=>revealEmojiJasonCity('jason_brand_emoji')}>
+            <Button variant="outlined" size="large" onClick={()=>revealEmojiJasonCity('jason_city_emoji_timer')}>
                Reveal Sequence
             </Button>
           </ListItem>
@@ -259,12 +285,14 @@ export default function NameThatEmoji() {
             <Typography variant='h5' visibility='hidden' id='jason_brand_emoji' style={{visibility: isVisibleCathyCity ? 'visible' : 'hidden'}}>
                City Q-1 😀
             </Typography>
+            <Typography variant='h5' visibility='hidden' style={{visibility: isVisibleCathyCity ? 'visible' : 'hidden'}}>
+            <p id='cathy_city_emoji_timer' style={{color:"red"}}>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Timer</p>
+            </Typography>
             <Typography variant='h5'>
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;                                                                        
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             </Typography>
-            <Button variant="outlined" size="large" onClick={()=>revealEmojiCathyCity('jason_brand_emoji')}>
+            <Button variant="outlined" size="large" onClick={()=>revealEmojiCathyCity('cathy_city_emoji_timer')}>
                Reveal Sequence
             </Button>
           </ListItem>
@@ -276,12 +304,14 @@ export default function NameThatEmoji() {
             <Typography variant='h5' visibility='hidden' id='jason_brand_emoji' style={{visibility: isVisibleJasonCelebrity ? 'visible' : 'hidden'}}>
                Celebrity Q-1 😀
             </Typography>
+            <Typography variant='h5' visibility='hidden' style={{visibility: isVisibleJasonCelebrity ? 'visible' : 'hidden'}}>
+            <p id='jason_celebrity_emoji_timer' style={{color:"red"}}>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Timer</p>
+            </Typography>
             <Typography variant='h5'>
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;                                                                        
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             </Typography>
-            <Button variant="outlined" size="large" onClick={()=>revealEmojiJasonCelebrity('jason_brand_emoji')}>
+            <Button variant="outlined" size="large" onClick={()=>revealEmojiJasonCelebrity('jason_celebrity_emoji_timer')}>
                Reveal Sequence
             </Button>
           </ListItem>
@@ -294,12 +324,14 @@ export default function NameThatEmoji() {
             <Typography variant='h5' visibility='hidden' id='jason_brand_emoji' style={{visibility: isVisibleCathyCelebrity ? 'visible' : 'hidden'}}>
                Celebrity Q-1 😀
             </Typography>
+            <Typography variant='h5' visibility='hidden' style={{visibility: isVisibleCathyCelebrity ? 'visible' : 'hidden'}}>
+            <p id='cathy_celebrity_emoji_timer' style={{color:"red"}}>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Timer</p>
+            </Typography>
             <Typography variant='h5'>
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;                                                                        
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             </Typography>
-            <Button variant="outlined" size="large" onClick={()=>revealEmojiCathyCelebrity('jason_brand_emoji')}>
+            <Button variant="outlined" size="large" onClick={()=>revealEmojiCathyCelebrity('cathy_celebrity_emoji_timer')}>
                Reveal Sequence
             </Button>
           </ListItem>
