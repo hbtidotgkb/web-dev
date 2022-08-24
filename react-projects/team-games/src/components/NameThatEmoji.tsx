@@ -54,7 +54,7 @@ export default function NameThatEmoji() {
 
   const updateElement = async (id: string) => {
     const el = document.getElementById(id);
-    for(var i=1;i<=10;i++) {
+    for(var i=1;i<=15;i++) {
       el!.innerText="\u00A0"+"\u00A0"+"\u00A0"+"\u00A0"+"\u00A0"+i;
       await timeout(1000);
     }
@@ -144,8 +144,8 @@ export default function NameThatEmoji() {
         <List>
           <ListItem button>
             <ListItemText primary="Team Jason" secondary="Brand Emoji Sequence" />
-            <Typography variant='h5' visibility='hidden' style={{visibility: isVisibleJasonBrand ? 'visible' : 'hidden'}}>
-               Brand Q-1 😀
+            <Typography variant='h4' visibility='hidden' style={{visibility: isVisibleJasonBrand ? 'visible' : 'hidden'}}>
+                🔫🚫 
             </Typography>
             <Typography variant='h5' visibility='hidden' style={{visibility: isVisibleJasonBrand ? 'visible' : 'hidden'}}>
             <p id='jason_brand_emoji_timer' style={{color:"red"}}>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Timer</p>
@@ -164,8 +164,8 @@ export default function NameThatEmoji() {
               primary="Team Cathy"
               secondary="Brand Emoji Sequence"
             />
-            <Typography variant='h5' visibility='hidden' id='jason_brand_emoji' style={{visibility: isVisibleCathyBrand ? 'visible' : 'hidden'}}>
-               Brand Q-1 😀
+            <Typography variant='h4' visibility='hidden' id='jason_brand_emoji' style={{visibility: isVisibleCathyBrand ? 'visible' : 'hidden'}}>
+                 🇺🇸❌📰
             </Typography>
             <Typography variant='h5' visibility='hidden' style={{visibility: isVisibleCathyBrand ? 'visible' : 'hidden'}}>
             <p id='cathy_brand_emoji_timer' style={{color:"red"}}>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Timer</p>
@@ -184,8 +184,8 @@ export default function NameThatEmoji() {
             <ListItemText 
               primary="Team Jason"
               secondary="Movie Emoji Sequence" />
-            <Typography variant='h5' visibility='hidden' id='jason_brand_emoji' style={{visibility: isVisibleJasonMovie ? 'visible' : 'hidden'}}>
-               Movie Q-1 😀
+            <Typography variant='h4' visibility='hidden' id='jason_brand_emoji' style={{visibility: isVisibleJasonMovie ? 'visible' : 'hidden'}}>
+                 🥊♣️
             </Typography>
             <Typography variant='h5' visibility='hidden' style={{visibility: isVisibleJasonMovie ? 'visible' : 'hidden'}}>
             <p id='jason_movie_emoji_timer' style={{color:"red"}}>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Timer</p>
@@ -204,8 +204,8 @@ export default function NameThatEmoji() {
               primary="Team Cathy"
               secondary="Movie Emoji Sequence"
             />
-            <Typography variant='h5' visibility='hidden' id='jason_brand_emoji' style={{visibility: isVisibleCathyMovie ? 'visible' : 'hidden'}}>
-               Movie Q-1 😀
+            <Typography variant='h4' visibility='hidden' id='jason_brand_emoji' style={{visibility: isVisibleCathyMovie ? 'visible' : 'hidden'}}>
+               ❓🚂👉🐲 
             </Typography>
             <Typography variant='h5' visibility='hidden' style={{visibility: isVisibleCathyMovie ? 'visible' : 'hidden'}}>
             <p id='cathy_movie_emoji_timer' style={{color:"red"}}>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Timer</p>
@@ -223,8 +223,8 @@ export default function NameThatEmoji() {
             <ListItemText 
               primary="Team Jason" 
               secondary="Food Emoji Sequence" />
-            <Typography variant='h5' visibility='hidden' id='jason_brand_emoji' style={{visibility: isVisibleJasonFood ? 'visible' : 'hidden'}}>
-               Food Q-1 😀
+            <Typography variant='h4' visibility='hidden' id='jason_brand_emoji' style={{visibility: isVisibleJasonFood ? 'visible' : 'hidden'}}>
+               🚪E🦶🦶
             </Typography>
             <Typography variant='h5' visibility='hidden' style={{visibility: isVisibleJasonFood ? 'visible' : 'hidden'}}>
             <p id='jason_food_emoji_timer' style={{color:"red"}}>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Timer</p>
@@ -243,8 +243,8 @@ export default function NameThatEmoji() {
               primary="Team Cathy"
               secondary="Food Emoji Sequence"
             />
-            <Typography variant='h5' visibility='hidden' id='jason_brand_emoji' style={{visibility: isVisibleCathyFood ? 'visible' : 'hidden'}}>
-               Food Q-1 😀
+            <Typography variant='h4' visibility='hidden' id='jason_brand_emoji' style={{visibility: isVisibleCathyFood ? 'visible' : 'hidden'}}>
+                🥶🧘‍♂️🖼️ 
             </Typography>
             <Typography variant='h5' visibility='hidden' style={{visibility: isVisibleCathyFood ? 'visible' : 'hidden'}}>
             <p id='cathy_food_emoji_timer' style={{color:"red"}}>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Timer</p>
@@ -262,8 +262,8 @@ export default function NameThatEmoji() {
             <ListItemText 
               primary="Team Jason" 
               secondary="City Emoji Sequence" />
-            <Typography variant='h5' visibility='hidden' id='jason_brand_emoji' style={{visibility: isVisibleJasonCity ? 'visible' : 'hidden'}}>
-               City Q-1 😀
+            <Typography variant='h4' visibility='hidden' id='jason_brand_emoji' style={{visibility: isVisibleJasonCity ? 'visible' : 'hidden'}}>
+               🐁🐄
             </Typography>
             <Typography variant='h5' visibility='hidden' style={{visibility: isVisibleJasonCity ? 'visible' : 'hidden'}}>
             <p id='jason_city_emoji_timer' style={{color:"red"}}>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Timer</p>
@@ -282,8 +282,8 @@ export default function NameThatEmoji() {
               primary="Team Cathy"
               secondary="City Emoji Sequence"
             />
-            <Typography variant='h5' visibility='hidden' id='jason_brand_emoji' style={{visibility: isVisibleCathyCity ? 'visible' : 'hidden'}}>
-               City Q-1 😀
+            <Typography variant='h4' visibility='hidden' id='jason_brand_emoji' style={{visibility: isVisibleCathyCity ? 'visible' : 'hidden'}}>
+                🎒👨‍🍼 
             </Typography>
             <Typography variant='h5' visibility='hidden' style={{visibility: isVisibleCathyCity ? 'visible' : 'hidden'}}>
             <p id='cathy_city_emoji_timer' style={{color:"red"}}>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Timer</p>
@@ -301,8 +301,8 @@ export default function NameThatEmoji() {
             <ListItemText 
               primary="Team Jason" 
               secondary="Celebrity Emoji Sequence" />
-            <Typography variant='h5' visibility='hidden' id='jason_brand_emoji' style={{visibility: isVisibleJasonCelebrity ? 'visible' : 'hidden'}}>
-               Celebrity Q-1 😀
+            <Typography variant='h4' visibility='hidden' id='jason_brand_emoji' style={{visibility: isVisibleJasonCelebrity ? 'visible' : 'hidden'}}>
+                🏆⛽
             </Typography>
             <Typography variant='h5' visibility='hidden' style={{visibility: isVisibleJasonCelebrity ? 'visible' : 'hidden'}}>
             <p id='jason_celebrity_emoji_timer' style={{color:"red"}}>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Timer</p>
@@ -321,8 +321,8 @@ export default function NameThatEmoji() {
               primary="Team Cathy"
               secondary="Celebrity Emoji Sequence"
             />
-            <Typography variant='h5' visibility='hidden' id='jason_brand_emoji' style={{visibility: isVisibleCathyCelebrity ? 'visible' : 'hidden'}}>
-               Celebrity Q-1 😀
+            <Typography variant='h4' visibility='hidden' id='jason_brand_emoji' style={{visibility: isVisibleCathyCelebrity ? 'visible' : 'hidden'}}>
+                🙋🔫🦊
             </Typography>
             <Typography variant='h5' visibility='hidden' style={{visibility: isVisibleCathyCelebrity ? 'visible' : 'hidden'}}>
             <p id='cathy_celebrity_emoji_timer' style={{color:"red"}}>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Timer</p>
