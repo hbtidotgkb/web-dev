@@ -14,6 +14,7 @@ import QuestionDialogBharath from './QuestionDialogBharath';
 import QuestionDialogSailaja from './QuestionDialogSailaja';
 import QuestionDialogAnu from './QuestionDialogAnu';
 import NameThatEmoji from './NameThatEmoji';
+import BdrPoem from './BdrPoem';
 
 const Item = styled(Paper)(({ theme }) => ({
   backgroundColor: theme.palette.mode === 'dark' ? '#1A2027' : '#fff',
@@ -90,7 +91,7 @@ export default function BdrsGrid() {
       </Grid>
     {/* </Box> */}
     <NameThatEmoji/>
-    <NameThatEmoji/>
+    <BdrPoem/>
     </div>
   );
 }
