@@ -45,7 +45,7 @@ export default function QuestionDialog_Sean() {
         <DialogTitle>{"Ice-Breaker Question for Gaurav"}</DialogTitle>
         <DialogContent>
           <DialogContentText id="alert-dialog-slide-description">
-            Do not expect me questioning myself!
+            No Ques for me as I control the content of this page :)
           </DialogContentText>
         </DialogContent>
         <DialogActions>

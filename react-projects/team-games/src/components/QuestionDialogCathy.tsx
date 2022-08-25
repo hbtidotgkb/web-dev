@@ -46,7 +46,7 @@ export default function QuestionDialog_Cathy() {
         <DialogTitle>{"Ice-Breaker Question for Cathy"}</DialogTitle>
         <DialogContent>
           <DialogContentText id="alert-dialog-slide-description">
-              <Typography variant='h5'color="#FF0000">Will be revealed on 25th Aug 😀</Typography>
+              <Typography variant='h5'color="#FF0000">If you could swap jobs with anyone for a day, who would it be?</Typography>
           </DialogContentText>
         </DialogContent>
         <DialogActions>

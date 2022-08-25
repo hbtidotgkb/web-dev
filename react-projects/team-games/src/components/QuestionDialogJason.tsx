@@ -46,7 +46,7 @@ export default function QuestionDialog_Jason() {
         <DialogTitle>{"Ice-Breaker Question for Jason"}</DialogTitle>
         <DialogContent>
           <DialogContentText id="alert-dialog-slide-description">
-              <Typography variant='h5'color="#FF0000">Will be revealed on 25th Aug 😀</Typography>
+              <Typography variant='h5'color="#FF0000">What would you like to be known/remembered for?</Typography>
           </DialogContentText>
         </DialogContent>
         <DialogActions>
